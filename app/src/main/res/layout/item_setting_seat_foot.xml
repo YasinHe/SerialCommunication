@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/W_DIMEN_37PX"
+                android:layout_margin="@dimen/H_DIMEN_3PX">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="@dimen/W_DIMEN_200PX"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:background="@drawable/bg_teacher_table"
+        android:text="讲台"/>
+
+</RelativeLayout>

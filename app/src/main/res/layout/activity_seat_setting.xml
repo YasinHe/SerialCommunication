@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_setting_seat_background"
+                android:orientation="vertical"
+                android:padding="@dimen/H_DIMEN_16PX">
+
+    <include
+        android:id="@+id/headView"
+        layout="@layout/view_header_view"/>
+
+    <RelativeLayout
+        android:id="@+id/ral_left_funcation"
+        android:layout_width="@dimen/W_DIMEN_140PX"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_white">
+
+        <ImageView
+            android:id="@+id/iv_seat_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:maxWidth="@dimen/W_DIMEN_108PX"
+            android:maxHeight="@dimen/H_DIMEN_40PX"
+            android:layout_marginTop="@dimen/H_DIMEN_20PX"
+            android:background="@drawable/ic_seat_setting_big"/>
+
+        <ImageView
+            android:id="@+id/iv_binding_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_seat_setting"
+            android:maxHeight="@dimen/H_DIMEN_40PX"
+            android:maxWidth="@dimen/W_DIMEN_108PX"
+            android:layout_marginTop="@dimen/H_DIMEN_20PX"
+            android:background="@drawable/ic_binding_small"/>
+
+        <TextView
+            android:id="@+id/tv_exit"
+            android:layout_width="@dimen/W_DIMEN_97PX"
+            android:layout_height="@dimen/H_DIMEN_30PX"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/H_DIMEN_20PX"
+            android:text="退出系统设置"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:background="@drawable/bg_exit"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/W_DIMEN_12PX"
+        android:layout_toRightOf="@+id/ral_left_funcation"
+        android:background="@drawable/bg_white"
+        android:padding="@dimen/W_DIMEN_12PX">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+</RelativeLayout>

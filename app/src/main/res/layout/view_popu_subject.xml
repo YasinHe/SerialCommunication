@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:background="@drawable/bg_popu_subject"
+              android:layout_width="@dimen/W_DIMEN_124PX"
+              android:layout_height="@dimen/H_DIMEN_90PX">
+    <TextView
+        android:id="@+id/tv_seat_id"
+        android:layout_marginTop="@dimen/H_DIMEN_6PX"
+        android:layout_marginLeft="@dimen/H_DIMEN_6PX"
+        android:text="座位号:6"
+        android:textColor="#fd2121"
+        android:textSize="@dimen/H_DIMEN_12PX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_card_id"
+        android:layout_marginTop="@dimen/H_DIMEN_6PX"
+        android:text="卡号：xxxxxxxxx"
+        android:layout_below="@+id/tv_seat_id"
+        android:layout_alignLeft="@+id/tv_seat_id"
+        android:textColor="#fd2121"
+        android:textSize="@dimen/H_DIMEN_12PX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_marginTop="@dimen/H_DIMEN_6PX"
+        android:layout_marginBottom="@dimen/H_DIMEN_6PX"
+        android:text="已选:B"
+        android:layout_below="@+id/tv_card_id"
+        android:layout_alignLeft="@+id/tv_seat_id"
+        android:textColor="#fd2121"
+        android:textSize="@dimen/H_DIMEN_12PX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

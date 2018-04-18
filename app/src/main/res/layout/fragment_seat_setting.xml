@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcy_seats"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        </android.support.v7.widget.RecyclerView>
+
+        <include
+            android:id="@+id/footView"
+            layout="@layout/item_setting_seat_foot"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/H_DIMEN_59PX"
+        android:layout_below="@+id/rcy_seats">
+
+        <TextView
+            android:id="@+id/tv_columu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/W_DIMEN_12PX"
+            android:text="列数:"/>
+
+        <ImageView
+            android:id="@+id/iv_columu_subtract"
+            android:layout_width="@dimen/W_DIMEN_40PX"
+            android:layout_height="@dimen/H_DIMEN_40PX"
+            android:scaleType="centerInside"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_columu"
+            android:src="@drawable/ic_reduces"/>
+
+        <TextView
+            android:id="@+id/tv_columu_count"
+            android:layout_width="@dimen/W_DIMEN_27PX"
+            android:layout_height="@dimen/H_DIMEN_22PX"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_columu_subtract"
+            android:background="@drawable/bg_date"
+            android:gravity="center"
+            android:text="6"/>
+
+        <ImageView
+            android:id="@+id/iv_columu_add"
+            android:layout_width="@dimen/W_DIMEN_40PX"
+            android:layout_height="@dimen/H_DIMEN_40PX"
+            android:scaleType="centerInside"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_columu_count"
+            android:src="@drawable/ic_add"/>
+
+        <TextView
+            android:id="@+id/tv_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/W_DIMEN_12PX"
+            android:layout_toRightOf="@+id/iv_columu_add"
+            android:text="行数:"/>
+
+        <ImageView
+            android:id="@+id/iv_row_subtract"
+            android:layout_width="@dimen/W_DIMEN_40PX"
+            android:layout_height="@dimen/H_DIMEN_40PX"
+            android:scaleType="centerInside"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_row"
+            android:src="@drawable/ic_reduces"/>
+
+        <TextView
+            android:id="@+id/tv_row_count"
+            android:layout_width="@dimen/W_DIMEN_27PX"
+            android:layout_height="@dimen/H_DIMEN_22PX"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_row_subtract"
+            android:background="@drawable/bg_date"
+            android:gravity="center"
+            android:text="10"/>
+
+        <ImageView
+            android:id="@+id/iv_row_add"
+            android:layout_width="@dimen/W_DIMEN_40PX"
+            android:layout_height="@dimen/H_DIMEN_40PX"
+            android:scaleType="centerInside"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_row_count"
+            android:src="@drawable/ic_add"/>
+
+        <TextView
+            android:id="@+id/tv_reset"
+            android:layout_width="@dimen/W_DIMEN_69PX"
+            android:layout_height="@dimen/H_DIMEN_30PX"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/W_DIMEN_12PX"
+            android:layout_toLeftOf="@+id/tv_save"
+            android:background="@drawable/bg_reset"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:text="重置"/>
+
+        <TextView
+            android:id="@+id/tv_input"
+            android:layout_width="@dimen/W_DIMEN_69PX"
+            android:layout_height="@dimen/H_DIMEN_30PX"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/W_DIMEN_16PX"
+            android:background="@drawable/bg_start_input"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:text="导入"/>
+
+        <TextView
+            android:id="@+id/tv_output"
+            android:layout_width="@dimen/W_DIMEN_69PX"
+            android:layout_height="@dimen/H_DIMEN_30PX"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/W_DIMEN_12PX"
+            android:layout_toLeftOf="@+id/tv_input"
+            android:background="@drawable/bg_start_output"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:text="导出"/>
+
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_width="@dimen/W_DIMEN_69PX"
+            android:layout_height="@dimen/H_DIMEN_30PX"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/W_DIMEN_12PX"
+            android:layout_toLeftOf="@+id/tv_output"
+            android:background="@drawable/bg_start_save"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:text="保存"/>
+    </RelativeLayout>
+</LinearLayout>

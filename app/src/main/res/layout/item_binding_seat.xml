@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/W_DIMEN_37PX"
+                android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="#4baeff"
+        android:gravity="center"
+        android:background="@drawable/bg_seat_icon"
+        />
+
+    <RelativeLayout
+        android:id="@+id/ral_binding"
+        android:background="@drawable/bg_seat_icon"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_position"
+            android:textColor="#54b1fd"
+            android:gravity="center"
+            android:text="20"
+            android:textSize="@dimen/H_DIMEN_10PX"
+            android:layout_marginTop="@dimen/H_DIMEN_3PX"
+            android:layout_marginLeft="@dimen/H_DIMEN_3PX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_card"
+            android:textColor="#006699"
+            android:gravity="center"
+            android:text="卡號:9876543210"
+            android:textSize="@dimen/H_DIMEN_12PX"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/tv_position"
+            android:layout_marginBottom="@dimen/H_DIMEN_6PX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:background="@drawable/bg_date"
+                android:id="@+id/ral_start_time"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_year1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#588cad"
+        android:textSize="@dimen/H_DIMEN_11PX"
+        android:layout_marginLeft="@dimen/H_DIMEN_12PX"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:text="2016"/>
+
+    <TextView
+        android:id="@+id/tv_year_show1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#999999"
+        android:textSize="@dimen/H_DIMEN_12PX"
+        android:layout_toRightOf="@+id/tv_year1"
+        android:layout_marginLeft="@dimen/H_DIMEN_12PX"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="年"/>
+
+    <TextView
+        android:id="@+id/tv_mouth1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#588cad"
+        android:textSize="@dimen/H_DIMEN_11PX"
+        android:layout_toRightOf="@+id/tv_year_show1"
+        android:layout_marginLeft="@dimen/H_DIMEN_12PX"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="2"/>
+
+    <TextView
+        android:id="@+id/tv_mouth_show1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#999999"
+        android:textSize="@dimen/H_DIMEN_12PX"
+        android:layout_toRightOf="@+id/tv_mouth1"
+        android:layout_marginLeft="@dimen/H_DIMEN_12PX"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="月"/>
+
+    <TextView
+        android:id="@+id/tv_day1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#588cad"
+        android:textSize="@dimen/H_DIMEN_11PX"
+        android:layout_toRightOf="@+id/tv_mouth_show1"
+        android:layout_marginLeft="@dimen/H_DIMEN_12PX"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="22"/>
+
+    <TextView
+        android:id="@+id/tv_day_show1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#999999"
+        android:textSize="@dimen/H_DIMEN_12PX"
+        android:layout_toRightOf="@+id/tv_day1"
+        android:layout_marginLeft="@dimen/H_DIMEN_12PX"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="日"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv_day_show1"
+        android:layout_marginLeft="@dimen/W_DIMEN_12PX"
+        android:layout_marginRight="@dimen/W_DIMEN_12PX"
+        android:background="@drawable/ic_to_buttom"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>
