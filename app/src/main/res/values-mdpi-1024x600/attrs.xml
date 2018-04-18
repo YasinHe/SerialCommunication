@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 自定义圆形进度条，属性设置 -->
+    <declare-styleable name="CustomCircleProgress">
+        <!-- 默认圆的颜色 -->
+        <attr name="progress_default_color" format="color"/>
+        <!-- 进度圆的颜色 -->
+        <attr name="progress_reached_color" format="color"/>
+        <!-- 进度条的高度 -->
+        <attr name="progress_reached_height" format="dimension"/>
+        <!-- 无进度时(默认圆)的边框高 -->
+        <attr name="progress_default_height" format="dimension"/>
+        <!-- 圆的半径 -->
+        <attr name="circle_radius" format="dimension"/>
+    </declare-styleable>
+
+    <!--/圆形控件-->
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView3">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+
+    <!--圆角图片-->
+    <attr name="borderRadius" format="dimension" />
+    <attr name="type">
+        <enum name="circle" value="0" />
+        <enum name="round" value="1" />
+    </attr>
+    <declare-styleable name="RoundImageView">
+        <attr name="borderRadius" />
+        <attr name="type" />
+    </declare-styleable>
+
+</resources>
